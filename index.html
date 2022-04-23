@@ -30,13 +30,13 @@
             <a class="nav-link" href="#profile">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Works</a>
+            <a class="nav-link" href="#works">Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Read Books</a>
+            <a class="nav-link" href="#read_books">Read Books</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -169,59 +169,107 @@
   </p>
 
   <div class="container main">
+    <div class="row">
+      <div class="col-10">
 
-    <!-- profile -->
-    <a id="profile"></a>
-    <div class="container profile">
-      <h1 class="section-title text-center" title="user">Profile</h1>
-    </div>
-    <div class="container p-5">
-      <div class="row">
-        <div class="col-3"><img src="img/profile-img.jpg" class="img-thumbnail rounded mx-auto d-block" alt="..."></div>
-        <div class="col-9">
-          <h2>自己紹介</h2>
-          <p class="pt-2 pb-4">はじめまして。私はHiroki<a href="https://github.com/kawhi6key">(@kawhi6key)</a>と申します。<br>
-            これまでプログラミングとは無縁の環境で生きていましたが、<br>
-            つくりたいものがあり、30代後半からプログラミングの勉強を始めました。<br>
-            言語は主にPythonを勉強していますが、WordPressを触るために、<br>
-            PHPやHTML,CSSなどちょっとやったことがあります。<br>
-            少しづつデータベースについても勉強していきたいと考えています。<br><br>
-            趣味は、ポタリングです。 </p>
-            <h4 class="p-2 mb-2 bg-dark text-white">これまでに使用した技術 & ソフトウェア</h4>
-            <div class="container">
-              <div class="row">
-                <div class="col-3">
-                  <img src="img/python.jpeg" class="img-thumbnail" alt="...">
-                </div>
-                <div class="col-3">
-                  <img src="img/html.jpeg" class="img-thumbnail" alt="...">
-                </div>
-                <div class="col-3">
-                  <img src="img/css.png" class="img-thumbnail" alt="...">
-                </div>
-                <div class="col-3">
-                  <img src="img/js.png" class="img-thumbnail" alt="...">
-                </div>
-                <div class="col-3">
-                  <img src="img/github.png" class="img-thumbnail" alt="...">
-                </div>
-                <div class="col-3">
-                  <img src="img/docker.png" class="img-thumbnail" alt="...">
-                </div>
-                <div class="col-3">
-                  <img src="img/sql.png" class="img-thumbnail" alt="...">
-                </div>
-                <div class="col-3">
-                  <img src="img/sqlite.jpeg" class="img-thumbnail" alt="...">
+        <!-- profile -->
+        <a id="profile"></a>
+        <div class="container profile">
+          <h1 class="section-title text-center" title="user">Profile</h1>
+        </div>
+        <div class="container p-5">
+          <div class="row">
+            <div class="col-3"><img src="img/profile-img.jpg" class="img-thumbnail rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-9">
+              <h2>自己紹介</h2>
+              <p class="pt-2 pb-4">はじめまして。私はHiroki<a href="https://github.com/kawhi6key">(@kawhi6key)</a>と申します。<br>
+                これまでプログラミングとは無縁の環境で生きていましたが、<br>
+                つくりたいものがあり、30代後半からプログラミングの勉強を始めました。<br>
+                言語は主にPythonを勉強していますが、WordPressを触るために、<br>
+                PHPやHTML,CSSなどちょっとやったことがあります。<br>
+                少しづつデータベースについても勉強していきたいと考えています。<br><br>
+                趣味は、ポタリングです。 </p>
+              <h4 class="p-2 mb-2 bg-dark text-white">これまでに使用した技術 & ソフトウェア</h4>
+              <div class="container">
+                <div class="row">
+                  <div class="col-3">
+                    <a href="https://www.python.org/"><img src="img/python.jpeg" class="img-thumbnail" alt="Pythonのロゴ"></a>
+                  </div>
+                  <div class="col-3">
+                    <a href=""><img src="img/html.jpeg" class="img-thumbnail" alt="..."></a>
+                  </div>
+                  <div class="col-3">
+                    <img src="img/css.png" class="img-thumbnail" alt="...">
+                  </div>
+                  <div class="col-3">
+                    <img src="img/js.png" class="img-thumbnail" alt="...">
+                  </div>
+                  <div class="col-3">
+                    <img src="img/github.png" class="img-thumbnail" alt="...">
+                  </div>
+                  <div class="col-3">
+                    <img src="img/docker.png" class="img-thumbnail" alt="...">
+                  </div>
+                  <div class="col-3">
+                    <img src="img/sql.png" class="img-thumbnail" alt="...">
+                  </div>
+                  <div class="col-3">
+                    <img src="img/sqlite.jpeg" class="img-thumbnail" alt="...">
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- works -->
+        <a id="works"></a>
+        <div class="container works">
+          <h1 class="section-title text-center" title="user">Works</h1>
+        </div>
+        <div class="container p-5" style="height: 2rem;">
+          <div class="row">
+            <div class="col-4">
+              <div class="card" style="width: auto;">
+                <img src="img/comming_soon.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ZoomURL自動発行化プログラム</h5>
+                  <p class="card-text">オンライン市役所 プログラミング課で現在進行中のプロジェクトです。完成したらお知らせします。</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card" style="width: auto;">
+                <img src="img/comming_soon.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ZoomURL自動発行化プログラム</h5>
+                  <p class="card-text">オンライン市役所 プログラミング課で現在進行中のプロジェクトです。完成したらお知らせします。</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card" style="width: auto;">
+                <img src="img/comming_soon.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ZoomURL自動発行化プログラム</h5>
+                  <p class="card-text">オンライン市役所 プログラミング課で現在進行中のプロジェクトです。完成したらお知らせします。</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
+
+      <div class="container "></div>
+
     </div>
-
-
-
   </div>
 
 
