@@ -26,8 +26,8 @@ svg {
     position: relative;
     width: 100vmin;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 54%;
     transform: translate(-50%, -50%);
 }
 
@@ -156,5 +156,95 @@ svg {
 
     100% {
         transform: translateY(0%);
+    }
+}
+
+/* my profile */
+.read_more {
+    position: absolute;
+    bottom: 0%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll {
+    display: inline-block;
+    padding-top: 70px;
+    position: relative;
+}
+
+.scroll::before {
+    animation: scroll 3.5s infinite;
+    border: solid #000;
+    border-width: 0 0 1px 1px;
+    content: "";
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+
+    80% {
+        transform: rotate(-45deg) translate(-30px, 30px);
+    }
+
+    0%,
+    80%,
+    100% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+}
+
+.fuwafuwa {
+    -webkit-animation-name: fuwafuwa;
+    /* fuwafuwaっていうアニメーションをしてね！ */
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    /*-webkit-animation-direction:alternate;*/
+    -webkit-animation-timing-function: ease;
+
+    -moz-animation-name: fuwafuwa;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    /*-moz-animation-direction:alternate;*/
+    -moz-animation-timing-function: ease;
+}
+
+/* fuwafuwaっていうアニメーションはこんなふうだよ！ */
+@-webkit-keyframes fuwafuwa {
+    0% {
+        -webkit-transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, -10px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes fuwafuwa {
+    0% {
+        -moz-transform: translate(0, 0);
+    }
+    50% {
+        -moz-transform: translate(0, -10px);
+    }
+    100% {
+        -moz-transform: translate(0, 0);
     }
 }
