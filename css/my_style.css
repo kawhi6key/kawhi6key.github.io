@@ -248,3 +248,11 @@ svg {
         -moz-transform: translate(0, 0);
     }
 }
+
+.card-body {
+    height: 9rem;
+}
+
+.card-text {
+    font-size: 0.7rem;
+}
