@@ -14,20 +14,20 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Hiroki's Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link" href="#profile">Profile</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Works</a>
@@ -40,7 +40,7 @@
           </li>
         </ul>
         <form class="d-flex">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll">
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/kawhi6key">GitHub</a>
             </li>
@@ -173,7 +173,51 @@
     <!-- profile -->
     <a id="profile"></a>
     <div class="container profile">
-      <h1 class="section-title lsf-icon" title="user">Profile</h1>
+      <h1 class="section-title text-center" title="user">Profile</h1>
+    </div>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-3"><img src="img/profile-img.jpg" class="img-thumbnail rounded mx-auto d-block" alt="..."></div>
+        <div class="col-9">
+          <h2>自己紹介</h2>
+          <p class="pt-2 pb-4">はじめまして。私はHiroki<a href="https://github.com/kawhi6key">(@kawhi6key)</a>と申します。<br>
+            これまでプログラミングとは無縁の環境で生きていましたが、<br>
+            つくりたいものがあり、30代後半からプログラミングの勉強を始めました。<br>
+            言語は主にPythonを勉強していますが、WordPressを触るために、<br>
+            PHPやHTML,CSSなどちょっとやったことがあります。<br>
+            少しづつデータベースについても勉強していきたいと考えています。<br><br>
+            趣味は、ポタリングです。 </p>
+            <h4 class="p-2 mb-2 bg-dark text-white">これまでに使用した技術 & ソフトウェア</h4>
+            <div class="container">
+              <div class="row">
+                <div class="col-3">
+                  <img src="img/python.jpeg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                  <img src="img/html.jpeg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                  <img src="img/css.png" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                  <img src="img/js.png" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                  <img src="img/github.png" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                  <img src="img/docker.png" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                  <img src="img/sql.png" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-3">
+                  <img src="img/sqlite.jpeg" class="img-thumbnail" alt="...">
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
 
 
